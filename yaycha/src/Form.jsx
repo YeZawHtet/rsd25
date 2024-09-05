@@ -1,8 +1,9 @@
-import { useRef } from "react"
-
+import { useRef, useContext } from "react"
+import { AppContext } from "./ThemedApp";
 export default function Form({add}){
     const contentRef = useRef();
     const nameRef = useRef();
+    const {mode}=useContext(AppContext);
     return (
         <form 
         onSubmit={e=>{
@@ -21,7 +22,7 @@ export default function Form({add}){
             padding:10,
             borderRadius:8,
             marginBottom:20,
-            background:"#def",
+            background:mode=="dark" ? "#555" : "#def",
         }}>
             <input ref={contentRef} type="text" placeholder="Content" style={{padding: 5}}/>
             <input ref={nameRef} type="text" placeholder="Name" style={{padding: 5}}/>
