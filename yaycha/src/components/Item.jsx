@@ -18,7 +18,7 @@ import { green } from "@mui/material/colors";
 export default function Item({ item, remove }) {
   return (
     <Card sx={{ mb: 2 }}>
-      <CardContent>
+      <CardContent sx={{bgcolor:"banner"}}>
         <Box
           sx={{
             display: "flex",
@@ -35,7 +35,7 @@ export default function Item({ item, remove }) {
             <TimeIcon fontSize="10" color="success" />
             <Typography
               variant="caption"
-              sx={{ color: green[500] }}>
+              sx={{ color: "text.fade" }}>
               A few Second ago!
             </Typography>
           </Box>
