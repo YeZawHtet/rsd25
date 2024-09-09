@@ -13,3 +13,28 @@ about sx
 - sx can't use with normal html.
 - sx can only used with MUI component.
 
+about useMemo and useEffect
+-useMemo is used when functions or something that not to do everytime component's re-render. just do when require.
+import { useState, useMemo } from "react";
+    function expensive() {
+        console.log("Some expensive tasks");
+        return "data";
+        }
+        function App() {
+        const [count, setCount] = useState(0);
+        const data = useMemo(() => {
+        return expensive();
+        }, []);
+        return 
+            <div>
+                <h1>Count: {count}</h1>
+                <button onClick={() => setCount(count + 1)}>
+                Button
+                </button>
+            </div>;
+    }
+
+In the above code expensive function is just run only one time, and changing data in dependencies array [] can run next time. that is called useMemo function.
+
+
+-useEffect is used 
