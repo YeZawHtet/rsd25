@@ -1,0 +1,15 @@
+installing MUI framework
+-npm install @mui/material @emotion/react @emotion/styled
+
+installing fonts and icons for MUI 
+-npm install @mui/icons-material @fontsource/roboto
+
+color and icon list from MUI
+-Colors - https://mui.com/material-ui/customization/color/
+-Icons - https://mui.com/material-ui/material-icons/
+
+about sx
+- sx can use css style, bootstrap, tailwind.
+- sx can't use with normal html.
+- sx can only used with MUI component.
+
