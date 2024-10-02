@@ -1,0 +1,20 @@
+{
+  "name": "rsd25",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "echo \"Greeting: Nice to meet you!\"",
+    "WPH": "echo \"I am Wai Pyae Hlyan, I'm Programmar from GIC\"",
+    "YZH": "echo \"I am Ye Zaw Htet, I'm Programmar from GIC\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
